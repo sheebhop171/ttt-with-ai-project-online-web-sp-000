@@ -59,6 +59,7 @@ WIN_COMBINATIONS = [
    end
 
    def play
+     gets.strip
         while !over? && !won?
             turn
         end
