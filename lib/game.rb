@@ -59,7 +59,7 @@ WIN_COMBINATIONS = [
    end
 
    def play
-     turn until over?
+     turn until over? || draw?
       if won?
         puts "Congratulations #{winner}!"
       elsif draw?
