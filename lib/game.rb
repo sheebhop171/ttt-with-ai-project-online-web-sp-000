@@ -59,14 +59,12 @@ WIN_COMBINATIONS = [
    end
 
    def play
-        while !over? && !won?
-            turn
-        end
-          if won?
-            puts "Congratulations #{winner}!"
-          elsif draw?
-            puts "Cat's Game!"
-        end
+     turn until over?
+      if won?
+        puts "Congratulations #{winner}!"
+      elsif draw?
+        puts "Cat's Game!"
+      end
     end
 
 end
