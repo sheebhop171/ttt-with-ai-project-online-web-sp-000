@@ -60,7 +60,7 @@ WIN_COMBINATIONS = [
 
    def play
         while !over? && !won?
-            turn
+            self.turn
         end
           if won?
             puts "Congratulations #{winner}!"
