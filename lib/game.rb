@@ -42,7 +42,10 @@ WIN_COMBINATIONS = [
 
   def winner
     #binding.pry
-      board.cells[won?[0]] if won?
+    if won?
+      combination = won?
+      @board.cells[combination[0]] # X or O
+    end
   end
 
   def turn
